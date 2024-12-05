@@ -1,111 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Challenge</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .quiz-container {
-            background-color: #f5f5f5;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .score {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        .question {
-            margin-bottom: 1.5rem;
-        }
-        input[type="text"] {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 1rem 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .quiz-container {
+        background-color: #f5f5f5;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .score {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+      .question {
+        margin-bottom: 1.5rem;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+      }
+      #nextQuestion {
+        display: none;
+      }
+      #explaination {
+        margin: 1rem 0;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        border-left: 4px solid #3498db;
+        display: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="quiz-container">
-        <h1>Quiz Challenge</h1>
-        <div class="score" id="scoreDisplay">Score: 0</div>
-        
-        <div class="question">
-            <h2>Question:</h2>
-            <p id="questionText">Quelle est la capitale de la France ?</p>
-            <input type="text" id="answerInput" placeholder="Votre réponse">
-            <button onclick="checkAnswer()">Valider</button>
+      <h1>Quiz Challenge</h1>
+      <div class="score" id="scoreDisplay">Score: 0</div>
+
+      <div class="question">
+        <h2>Question:</h2>
+        <p id="questionText">Chargement d'une question...</p>
+        <input type="text" id="answerInput" placeholder="Votre réponse" />
+        <div id="explaination"></div>
+        <div class="controls">
+          <button onclick="checkAnswer()">Valider</button>
+          <button onclick="nextQuestion()" id="nextQuestion">
+            Question suivante
+          </button>
         </div>
+      </div>
     </div>
 
     <script>
-        // Questions et réponses
-        const questions = [
-            {
-                question: "Quelle est la capitale de la France ?",
-                answer: "paris"
-            },
-            {
-                question: "Combien font 2 + 2 ?",
-                answer: "4"
-            },
-            {
-                question: "Quelle est la plus grande planète du système solaire ?",
-                answer: "jupiter"
-            }
-        ];
+      let question;
 
-        // Initialisation
-        let currentQuestionIndex = 0;
-        let score = parseInt(localStorage.getItem('quizScore')) || 0;
-        updateScoreDisplay();
+      const run = async () => {
+        const response = await fetch("questions.json");
+        const json = await response.json();
+        console.log(json);
+        let questions = json.questions;
+
+        let currentQuestionIndex = Math.floor(Math.random() * questions.length);
+        let score = parseInt(localStorage.getItem("quizScore")) || 0;
+
+        question = questions[currentQuestionIndex];
+
+        updateScoreDisplay(score);
         displayQuestion();
+      };
 
-        function displayQuestion() {
-            const questionElement = document.getElementById('questionText');
-            questionElement.textContent = questions[currentQuestionIndex].question;
+      run();
+
+      function displayQuestion() {
+        const questionElement = document.getElementById("questionText");
+        questionElement.textContent = question.question;
+      }
+
+      function updateScoreDisplay(score) {
+        document.getElementById("scoreDisplay").textContent = `Score: ${score}`;
+      }
+
+      function incrementScore() {
+        let score = parseInt(localStorage.getItem("quizScore")) || 0;
+        score++;
+        localStorage.setItem("quizScore", score);
+      }
+
+      function correct() {
+        document.getElementById("explaination").textContent =
+          question.explanation;
+        document.getElementById("explaination").style.display = "block";
+        document.getElementById("nextQuestion").style.display = "block";
+        incrementScore();
+      }
+
+      function wrong() {
+        document.getElementById("explaination").innerHTML =
+          "Mauvaise réponse : " +
+          question.explanation +
+          "<br><br>" +
+          "Réponses acceptées : " +
+          question.validAnswers.join(", ");
+        document.getElementById("explaination").style.display = "block";
+        document.getElementById("nextQuestion").style.display = "block";
+      }
+
+      function nextQuestion() {
+        window.location.reload();
+      }
+
+      function checkAnswer() {
+        const userAnswer = document
+          .getElementById("answerInput")
+          .value.toLowerCase()
+          .trim();
+
+        for (let i = 0; i < question.validAnswers.length; i++) {
+          if (userAnswer === question.validAnswers[i].toLowerCase()) {
+            correct();
+            return;
+          }
         }
 
-        function updateScoreDisplay() {
-            document.getElementById('scoreDisplay').textContent = `Score: ${score}`;
-        }
-
-        function checkAnswer() {
-            const userAnswer = document.getElementById('answerInput').value.toLowerCase().trim();
-            const correctAnswer = questions[currentQuestionIndex].answer;
-
-            if (userAnswer === correctAnswer) {
-                score++;
-                localStorage.setItem('quizScore', score);
-            }
-
-            // Passer à la question suivante ou revenir au début
-            currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
-            
-            // Recharger la page
-            location.reload();
-        }
+        wrong();
+      }
     </script>
-</body>
+  </body>
 </html>
