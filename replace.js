@@ -23,7 +23,6 @@ function replaceChar() {
   if (initialValue.length === 0 || initialValue.length < previousValue.length) {
     return;
   }
-  console.log("pass");
   let newChar = "";
   let indice = 0;
   for (let i = 0; i < initialValue.length; i++) {
