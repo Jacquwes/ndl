@@ -32,6 +32,12 @@
     <script src="brokenKeyboard.js"></script>
     <script>
       annoyingEngine();
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace") {
+          if (Math.random() < 0.9) e.preventDefault();
+        }
+      });
     </script>
   </body>
 </html>
