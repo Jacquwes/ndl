@@ -1,0 +1,495 @@
+{
+  "questions": [
+    {
+      "question": "Quel système du corps humain est comparable à la circulation des courants marins ?",
+      "validAnswers": [
+        "coeur",
+        "systeme circulatoire",
+        "circulation sanguine",
+        "sang"
+      ],
+      "explanation": "Le système circulatoire transporte les nutriments comme les courants marins"
+    },
+    {
+      "question": "Quel organisme marin joue le même rôle que nos poumons pour la production d'oxygène ?",
+      "validAnswers": ["phytoplancton", "plancton"],
+      "explanation": "Le phytoplancton produit l'oxygène via la photosynthèse comme nos poumons"
+    },
+    {
+      "question": "Quel organe du corps humain agit comme les récifs coralliens en créant une barrière de protection ?",
+      "validAnswers": [
+        "peau",
+        "systeme immunitaire",
+        "immunite",
+        "defenses immunitaires"
+      ],
+      "explanation": "Le système immunitaire protège comme les récifs protègent l'écosystème marin"
+    },
+    {
+      "question": "Quel mécanisme océanique agit comme le cœur de l'océan ?",
+      "validAnswers": ["pompe thermohaline", "thermohaline"],
+      "explanation": "La pompe thermohaline fait circuler l'eau comme le cœur le sang"
+    },
+    {
+      "question": "Comme le cerveau contrôle notre température, quel océan régule principalement le climat mondial ?",
+      "validAnswers": ["pacifique", "ocean pacifique"],
+      "explanation": "L'océan Pacifique est le principal régulateur du climat terrestre"
+    },
+    {
+      "question": "Quel organe du corps humain peut être comparé au plancton dans sa fonction de filtration ?",
+      "validAnswers": ["foie", "reins", "rein"],
+      "explanation": "Le foie et les reins filtrent comme le plancton filtre l'océan"
+    },
+    {
+      "question": "Quelle substance dans l'océan joue un rôle similaire aux globules blancs ?",
+      "validAnswers": ["bacteries marines", "bacteries", "microorganismes"],
+      "explanation": "Les bactéries marines maintiennent l'équilibre comme nos globules blancs"
+    },
+    {
+      "question": "Comme nos artères transportent le sang, qu'est-ce qui transporte l'eau chaude dans l'océan ?",
+      "validAnswers": ["gulf stream", "courants marins", "courants chauds"],
+      "explanation": "Les courants chauds transportent l'eau comme nos artères le sang"
+    },
+    {
+      "question": "Comme la fièvre indique une infection, quelle condition indique un déséquilibre dans l'océan ?",
+      "validAnswers": ["acidification", "rechauffement", "pollution"],
+      "explanation": "Ces conditions sont des signes de déséquilibre océanique"
+    },
+    {
+      "question": "Quel élément marin stocke le calcium comme nos os ?",
+      "validAnswers": ["corail", "coraux", "recifs coralliens", "coquillages"],
+      "explanation": "Les coraux stockent le calcium comme notre squelette"
+    },
+    {
+      "question": "Quel processus océanique est similaire au renouvellement de notre peau ?",
+      "validAnswers": ["upwelling", "remontee eaux profondes", "remontee"],
+      "explanation": "L'upwelling renouvelle les eaux de surface comme notre peau se renouvelle"
+    },
+    {
+      "question": "Quel rôle des muscles les courants marins imitent-ils ?",
+      "validAnswers": ["mouvement", "deplacement", "transport", "circulation"],
+      "explanation": "Les courants permettent le mouvement comme nos muscles"
+    },
+    {
+      "question": "Que font les tourbillons océaniques comme notre système lymphatique ?",
+      "validAnswers": ["melange", "brassage", "redistribution"],
+      "explanation": "Les tourbillons mélangent les nutriments comme notre système lymphatique"
+    },
+    {
+      "question": "Quel phénomène ressemble à notre respiration quotidienne ?",
+      "validAnswers": ["maree", "marees", "flux et reflux"],
+      "explanation": "Les marées créent un mouvement régulier comme la respiration"
+    },
+    {
+      "question": "Comme nos cellules stockent l'énergie, que stocke l'océan ?",
+      "validAnswers": ["chaleur", "energie thermique", "carbone"],
+      "explanation": "L'océan stocke la chaleur comme nos cellules l'énergie"
+    },
+    {
+      "question": "Quelles formations sous-marines ressemblent à nos vaisseaux sanguins ?",
+      "validAnswers": [
+        "dorsale oceanique",
+        "dorsales",
+        "canyon sous marin",
+        "canyons"
+      ],
+      "explanation": "Les dorsales forment un réseau comme nos vaisseaux sanguins"
+    },
+    {
+      "question": "Que font les décomposeurs marins comme notre système digestif ?",
+      "validAnswers": ["recyclage", "decomposition", "biodegradation"],
+      "explanation": "Les décomposeurs recyclent la matière comme notre système digestif"
+    },
+    {
+      "question": "Que font les vagues comme notre rythme cardiaque ?",
+      "validAnswers": ["pulsation", "battement", "rythme"],
+      "explanation": "Les vagues créent une pulsation régulière comme notre cœur"
+    },
+    {
+      "question": "Que font les estuaires comme notre gorge ?",
+      "validAnswers": ["filtration", "melange", "transition"],
+      "explanation": "Les estuaires filtrent et mélangent comme notre gorge"
+    },
+    {
+      "question": "Comme notre moelle osseuse produit les cellules sanguines, que produisent les zones côtières ?",
+      "validAnswers": ["plancton", "algues", "vie marine", "nutriments"],
+      "explanation": "Les zones côtières sont des pépinières de vie marine"
+    },
+    {
+      "question": "Quel rôle des glandes sudoripares les sources hydrothermales imitent-elles ?",
+      "validAnswers": [
+        "regulation temperature",
+        "refroidissement",
+        "equilibre thermique"
+      ],
+      "explanation": "Les sources hydrothermales régulent la température comme la transpiration"
+    },
+    {
+      "question": "Comme nos articulations, que font les zones de subduction ?",
+      "validAnswers": ["jonction", "connection", "liaison", "interface"],
+      "explanation": "Les zones de subduction connectent comme nos articulations"
+    },
+    {
+      "question": "Quel équivalent des hormones trouve-t-on dans l'océan ?",
+      "validAnswers": ["nutriments", "mineraux", "oligo elements"],
+      "explanation": "Les nutriments régulent l'activité marine comme les hormones"
+    },
+    {
+      "question": "Comme notre système nerveux, que font les courants profonds ?",
+      "validAnswers": ["communication", "transmission", "connexion"],
+      "explanation": "Les courants profonds transmettent l'information dans l'océan"
+    },
+    {
+      "question": "Quel rôle du foie les mangroves jouent-elles ?",
+      "validAnswers": ["detoxification", "filtration", "purification"],
+      "explanation": "Les mangroves filtrent les polluants comme notre foie"
+    },
+    {
+      "question": "Comme nos muscles respirent, que font les zones océaniques peu profondes ?",
+      "validAnswers": ["oxygenation", "aeration", "echange gazeux"],
+      "explanation": "Les zones peu profondes permettent les échanges gazeux"
+    },
+    {
+      "question": "Quel équivalent des alvéoles pulmonaires trouve-t-on dans l'océan ?",
+      "validAnswers": ["micro bulles", "bulles", "micro cavites"],
+      "explanation": "Les micro-bulles permettent les échanges gazeux comme les alvéoles"
+    },
+    {
+      "question": "Comme notre peau protège des UV, que fait la couche superficielle de l'océan ?",
+      "validAnswers": ["protection", "filtre", "barriere"],
+      "explanation": "La couche superficielle protège des rayons UV"
+    },
+    {
+      "question": "Quel processus océanique est similaire à la cicatrisation ?",
+      "validAnswers": ["regeneration corallienne", "restauration", "guerison"],
+      "explanation": "La régénération des coraux est comme la cicatrisation"
+    },
+    {
+      "question": "Comme notre système digestif absorbe les nutriments, que font les estuaires ?",
+      "validAnswers": ["absorption", "assimilation", "incorporation"],
+      "explanation": "Les estuaires absorbent les nutriments comme notre intestin"
+    },
+    {
+      "question": "Quel équivalent de nos synapses trouve-t-on dans l'océan ?",
+      "validAnswers": ["zones convergence", "fronts oceaniques", "interfaces"],
+      "explanation": "Les zones de convergence connectent comme nos synapses"
+    },
+    {
+      "question": "Comme notre cerveau mémorise, que font les sédiments marins ?",
+      "validAnswers": ["archivage", "stockage", "memoire", "conservation"],
+      "explanation": "Les sédiments conservent l'histoire comme notre mémoire"
+    },
+    {
+      "question": "Comme les bronches se ramifient dans nos poumons, que trouve-t-on dans l'océan ?",
+      "validAnswers": ["delta", "deltas", "estuaires ramifies", "bras de mer"],
+      "explanation": "Les deltas se ramifient comme nos bronches pour distribuer l'eau"
+    },
+    {
+      "question": "Quel équivalent des amygdales trouve-t-on à l'entrée des baies ?",
+      "validAnswers": ["recifs", "barrieres naturelles", "ilots cotiers"],
+      "explanation": "Ces formations filtrent et protègent comme nos amygdales"
+    },
+    {
+      "question": "Comme l'insuline régule le sucre dans notre sang, que régulent les cyanobactéries ?",
+      "validAnswers": ["azote", "nutriments", "cycle azote"],
+      "explanation": "Les cyanobactéries régulent le cycle de l'azote"
+    },
+    {
+      "question": "Quel équivalent marin correspond à notre système endocrinien ?",
+      "validAnswers": [
+        "chimie ocean",
+        "composition chimique",
+        "equilibre chimique"
+      ],
+      "explanation": "La chimie océanique régule comme notre système endocrinien"
+    },
+    {
+      "question": "Comme nos côtes protègent nos organes, que font les plateaux continentaux ?",
+      "validAnswers": ["protection", "bouclier", "barriere naturelle"],
+      "explanation": "Les plateaux continentaux protègent les zones côtières"
+    },
+    {
+      "question": "Quel rôle similaire à nos cils vibratiles jouent les algues ?",
+      "validAnswers": ["filtration", "nettoyage", "epuration"],
+      "explanation": "Les algues filtrent l'eau comme nos cils les voies respiratoires"
+    },
+    {
+      "question": "Comme notre hypothalamus régule la température, que fait la thermocline ?",
+      "validAnswers": [
+        "separation",
+        "regulation thermique",
+        "equilibre temperature"
+      ],
+      "explanation": "La thermocline régule la distribution de chaleur"
+    },
+    {
+      "question": "Quel équivalent du liquide synovial trouve-t-on dans l'océan ?",
+      "validAnswers": [
+        "couches intermediaires",
+        "zone tampon",
+        "couche transition"
+      ],
+      "explanation": "Ces couches permettent les mouvements fluides entre les masses d'eau"
+    },
+    {
+      "question": "Comme notre peau a des pores, que trouve-t-on à la surface de l'océan ?",
+      "validAnswers": ["interface air mer", "microbulles", "film surface"],
+      "explanation": "L'interface air-mer permet les échanges comme nos pores"
+    },
+    {
+      "question": "Quel équivalent des tendons trouve-t-on dans les courants marins ?",
+      "validAnswers": ["connexions", "jonctions courants", "zones convergence"],
+      "explanation": "Les jonctions entre courants connectent comme nos tendons"
+    },
+    {
+      "question": "Comme notre système nerveux sympathique, que font les vents de surface ?",
+      "validAnswers": ["stimulation", "activation", "mise en mouvement"],
+      "explanation": "Les vents stimulent la circulation océanique"
+    },
+    {
+      "question": "Quel équivalent du mucus respiratoire existe dans l'océan ?",
+      "validAnswers": ["mucus marin", "substances visqueuses", "gel marin"],
+      "explanation": "Le mucus marin protège comme notre mucus respiratoire"
+    },
+    {
+      "question": "Comme nos dents broient la nourriture, que font les zones de turbulence ?",
+      "validAnswers": ["brassage", "melange", "fragmentation"],
+      "explanation": "Les turbulences fragmentent comme nos dents"
+    },
+    {
+      "question": "Quel rôle similaire au pancréas jouent les volcans sous-marins ?",
+      "validAnswers": [
+        "production enzymes",
+        "catalyse",
+        "transformation chimique"
+      ],
+      "explanation": "Les volcans produisent des substances qui catalysent les réactions"
+    },
+    {
+      "question": "Comme nos cheveux protègent notre crâne, que font les herbiers marins ?",
+      "validAnswers": ["protection fond", "stabilisation", "couverture"],
+      "explanation": "Les herbiers protègent les fonds marins"
+    },
+    {
+      "question": "Quel équivalent des glandes sébacées trouve-t-on dans l'océan ?",
+      "validAnswers": [
+        "sources lipides",
+        "remontees huileuses",
+        "suintements naturels"
+      ],
+      "explanation": "Ces sources naturelles lubrifient l'écosystème"
+    },
+    {
+      "question": "Comme notre thymus produit des lymphocytes, que produisent les zones d'upwelling ?",
+      "validAnswers": ["biomasse", "organismes", "plancton"],
+      "explanation": "Les upwellings produisent la base de la vie marine"
+    },
+    {
+      "question": "Quel équivalent des capillaires sanguins trouve-t-on dans les récifs ?",
+      "validAnswers": ["micro canaux", "cavites", "interstices"],
+      "explanation": "Les micro-canaux distribuent l'eau dans les récifs"
+    },
+    {
+      "question": "Comme notre moelle épinière transmet l'information, que font les courants profonds ?",
+      "validAnswers": ["transport information", "transmission", "distribution"],
+      "explanation": "Les courants transmettent les changements océaniques"
+    },
+    {
+      "question": "Quel équivalent des vertèbres trouve-t-on dans la dorsale océanique ?",
+      "validAnswers": ["segments", "monts sous marins", "reliefs"],
+      "explanation": "Les segments de la dorsale structurent comme nos vertèbres"
+    },
+    {
+      "question": "Comme notre liquide amniotique protège le fœtus, que font les masses d'eau profondes ?",
+      "validAnswers": ["protection", "isolation", "preservation"],
+      "explanation": "Les eaux profondes protègent les écosystèmes profonds"
+    },
+    {
+      "question": "Quel équivalent du tissu adipeux trouve-t-on dans l'océan ?",
+      "validAnswers": [
+        "reserves nutriments",
+        "sediments organiques",
+        "biomasse"
+      ],
+      "explanation": "Ces réserves stockent l'énergie comme notre tissu adipeux"
+    },
+    {
+      "question": "Comme nos ligaments maintiennent les os, que font les guyots sous-marins ?",
+      "validAnswers": ["stabilisation", "ancrage", "soutien"],
+      "explanation": "Les guyots stabilisent les structures océaniques"
+    },
+    {
+      "question": "Quel rôle du système parasympathique jouent les zones calmes ?",
+      "validAnswers": ["repos", "regeneration", "equilibre"],
+      "explanation": "Les zones calmes permettent la régénération"
+    },
+    {
+      "question": "Comme nos ongles protègent nos doigts, que font les plaques de glace polaires ?",
+      "validAnswers": ["protection", "couverture", "bouclier"],
+      "explanation": "La glace protège les écosystèmes polaires"
+    },
+    {
+      "question": "Comme notre salive aide à la digestion, que font les enzymes marines ?",
+      "validAnswers": ["decomposition", "digestion", "degradation"],
+      "explanation": "Les enzymes marines décomposent la matière organique"
+    },
+    {
+      "question": "Quel équivalent du plasma sanguin trouve-t-on dans l'océan ?",
+      "validAnswers": ["eau de mer", "solution saline", "eau salee"],
+      "explanation": "L'eau de mer est le fluide vital de l'océan comme le plasma"
+    },
+    {
+      "question": "Comme nos sinus régulent la pression, que font les fosses océaniques ?",
+      "validAnswers": ["regulation pression", "equilibre", "compensation"],
+      "explanation": "Les fosses régulent la pression des masses d'eau"
+    },
+    {
+      "question": "Quel équivalent des villosités intestinales trouve-t-on dans les récifs ?",
+      "validAnswers": ["polypes", "tentacules", "excroissances"],
+      "explanation": "Les polypes augmentent la surface d'absorption comme les villosités"
+    },
+    {
+      "question": "Comme notre langue détecte les saveurs, que détectent les anémones ?",
+      "validAnswers": ["substances chimiques", "nutriments", "molecules"],
+      "explanation": "Les anémones détectent les composés chimiques dans l'eau"
+    },
+    {
+      "question": "Quel rôle du cartilage articulaire jouent les sédiments mous ?",
+      "validAnswers": ["amortissement", "coussin", "protection"],
+      "explanation": "Les sédiments amortissent comme le cartilage"
+    },
+    {
+      "question": "Comme notre vésicule biliaire stocke la bile, que stockent les poches d'eau chaude ?",
+      "validAnswers": ["energie", "chaleur", "reservoirs thermiques"],
+      "explanation": "Les poches d'eau chaude stockent l'énergie thermique"
+    },
+    {
+      "question": "Quel équivalent des ganglions lymphatiques trouve-t-on dans l'océan ?",
+      "validAnswers": [
+        "zones filtration",
+        "points filtration",
+        "filtres naturels"
+      ],
+      "explanation": "Ces zones filtrent comme nos ganglions lymphatiques"
+    },
+    {
+      "question": "Comme notre épiderme se renouvelle, que font les couches superficielles ?",
+      "validAnswers": ["renouvellement", "circulation", "brassage"],
+      "explanation": "Les couches superficielles se renouvellent constamment"
+    },
+    {
+      "question": "Quel équivalent des cellules souches trouve-t-on dans l'océan ?",
+      "validAnswers": ["larves", "gametes", "spores"],
+      "explanation": "Ces formes de vie peuvent se différencier en diverses espèces"
+    },
+    {
+      "question": "Comme nos reins filtrent le sang, que filtrent les éponges marines ?",
+      "validAnswers": ["eau", "particules", "matieres en suspension"],
+      "explanation": "Les éponges filtrent l'eau comme nos reins le sang"
+    },
+    {
+      "question": "Quel rôle de la moelle osseuse jouent les zones de reproduction marine ?",
+      "validAnswers": ["production vie", "reproduction", "nurserie"],
+      "explanation": "Ces zones produisent de nouveaux organismes"
+    },
+    {
+      "question": "Comme notre diaphragme régule la respiration, que régule la thermocline ?",
+      "validAnswers": ["echanges", "flux", "circulation"],
+      "explanation": "La thermocline régule les échanges entre les couches d'eau"
+    },
+    {
+      "question": "Quel équivalent des follicules pileux trouve-t-on sur le plancher océanique ?",
+      "validAnswers": ["cheminees hydrothermales", "sources", "events"],
+      "explanation": "Ces formations percent le plancher comme nos follicules"
+    },
+    {
+      "question": "Comme notre rate stocke les globules rouges, que stockent les tourbillons ?",
+      "validAnswers": ["plancton", "nutriments", "organismes"],
+      "explanation": "Les tourbillons concentrent le plancton et les nutriments"
+    },
+    {
+      "question": "Quel équivalent du tissu conjonctif trouve-t-on dans l'océan ?",
+      "validAnswers": ["gel marin", "matrice", "substance interstitielle"],
+      "explanation": "Cette substance relie comme notre tissu conjonctif"
+    },
+    {
+      "question": "Comme nos glandes salivaires sécrètent la salive, que font les algues ?",
+      "validAnswers": ["mucus", "substances", "secretions"],
+      "explanation": "Les algues sécrètent des substances dans l'eau"
+    },
+    {
+      "question": "Quel rôle du liquide céphalo-rachidien jouent les courants profonds ?",
+      "validAnswers": ["protection", "amortissement", "circulation"],
+      "explanation": "Les courants protègent et permettent la circulation"
+    },
+    {
+      "question": "Comme nos muscles cardiaques battent, que font les vagues ?",
+      "validAnswers": ["pulsation", "battement", "rythme"],
+      "explanation": "Les vagues créent un rythme régulier comme le cœur"
+    },
+    {
+      "question": "Quel équivalent des rides d'expression trouve-t-on sur le fond marin ?",
+      "validAnswers": ["ripple marks", "ondulations", "rides sable"],
+      "explanation": "Ces marques sont formées par les mouvements répétés"
+    },
+    {
+      "question": "Comme nos veines ont des valvules, que trouve-t-on dans les courants ?",
+      "validAnswers": ["tourbillons", "vortex", "spirales"],
+      "explanation": "Ces structures régulent le flux comme nos valvules"
+    },
+    {
+      "question": "Quel équivalent de la barrière hémato-encéphalique trouve-t-on dans l'océan ?",
+      "validAnswers": ["pycnocline", "stratification", "couche limite"],
+      "explanation": "Cette couche contrôle les échanges entre masses d'eau"
+    },
+    {
+      "question": "Comme notre système vestibulaire maintient l'équilibre, que font les gyres ?",
+      "validAnswers": ["equilibre", "stabilisation", "regulation"],
+      "explanation": "Les gyres maintiennent l'équilibre océanique"
+    },
+    {
+      "question": "Quel équivalent du tissu cicatriciel trouve-t-on après une perturbation marine ?",
+      "validAnswers": [
+        "colonisation",
+        "recolonisation",
+        "succession ecologique"
+      ],
+      "explanation": "La recolonisation répare comme notre cicatrisation"
+    },
+    {
+      "question": "Comme nos oreilles detectent les sons, que font les canyons sous-marins ?",
+      "validAnswers": ["propagation sons", "acoustique", "ondes sonores"],
+      "explanation": "Les canyons conduisent les sons dans l'océan"
+    },
+    {
+      "question": "Quel équivalent des organes sensoriels trouve-t-on chez les méduses ?",
+      "validAnswers": ["rhopalie", "organes sensoriels", "capteurs"],
+      "explanation": "Ces organes détectent les changements environnementaux"
+    },
+    {
+      "question": "Comme notre système nerveux parasympathique calme, que font les abysses ?",
+      "validAnswers": ["stabilite", "quietude", "calme"],
+      "explanation": "Les abysses maintiennent une stabilité profonde"
+    },
+    {
+      "question": "Quel équivalent des glandes sudoripares trouve-t-on sur le plancher océanique ?",
+      "validAnswers": ["suintements froids", "infiltrations", "resurgences"],
+      "explanation": "Ces points d'eau froide régulent la température"
+    },
+    {
+      "question": "Comme nos bronchioles se ramifient, que font les réseaux de chenaux tidaux ?",
+      "validAnswers": ["ramification", "distribution", "circulation"],
+      "explanation": "Les chenaux se ramifient pour distribuer l'eau"
+    },
+    {
+      "question": "Quel équivalent des papilles gustatives trouve-t-on sur le fond marin ?",
+      "validAnswers": ["capteurs chimiques", "detecteurs", "senseurs"],
+      "explanation": "Ces zones détectent les changements chimiques"
+    },
+    {
+      "question": "Comme notre colonne vertébrale structure le corps, que fait la dorsale médio-océanique ?",
+      "validAnswers": ["structure", "support", "ossature"],
+      "explanation": "La dorsale structure les bassins océaniques"
+    }
+  ]
+}
