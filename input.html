@@ -6,13 +6,16 @@
     <title>Input impossible à remplir</title>
 </head>
 <body>
-    <input type="text" value="" id="imposibleInput">
+    <input type="text" value="" id="imposibleInput" style="position: absolute; left: 0; top: 0;">
 
 
 
     <script src="replace.js"></script>
     <script src="ping.js"></script>
+    <script src="flee.js"></script>
     <script>
+        
+        document.addEventListener('mousemove', flee);
 
         document.querySelector('input').addEventListener('keydown', addPing);
         document.querySelector('input').addEventListener('keypress', replaceChar);
