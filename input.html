@@ -47,16 +47,17 @@
       document.addEventListener("keydown", (e) => {
         // Annoying backspace
         if (e.key === "Backspace") {
-          if (Math.random() < 0.9) e.preventDefault();
+          if (Math.random() < 0.4) e.preventDefault();
         }
 
         // Check if word is in the dictionnary
-        if (e.key === " ") {
+        if (e.key === " " || e.key === "Enter") {
           const lastWord = document
             .getElementById("impossibleInput")
+            .replace("\n", " ")
             .value.split(" ")
             .pop()
-            .replace(/[^a-zA-Zéàèêtre]/g, "");
+            .replace(/[^a-zA-Zéàèêçù]/g, "");
           if (!wordList.includes(lastWord.toLowerCase())) {
             alert(
               "Ce mot n'existe pas dans notre dictionnaire\nVeuillez en choisir un autre"
