@@ -34,14 +34,11 @@ function addPing(e) {
     return;
   }
   let indice = e.target.selectionStart;
-  console.log("indice avant: " + indice);
   for (let i = 0; i < buffer.length; i++) {
     if (buffer[i].indice <= indice) {
       indice++;
     }
   }
-  console.log("indice après: " + indice);
-  console.log("pass");
   if (newChar === "") {
     return;
   }
