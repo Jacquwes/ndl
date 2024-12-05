@@ -12,7 +12,7 @@ function replaceChar() {
         return;
     }
     console.log("pass");
-    let newchar = '';
+    let newChar = '';
     let indice = 0;
     for(let i = 0; i < initialValue.length; i++) {
         if(initialValue[i] !== previousValue[i]) {
