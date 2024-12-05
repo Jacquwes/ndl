@@ -55,7 +55,7 @@ document.getElementById("mainButton").addEventListener("click", function() {
                 clearInterval(interval);
                 document.body.removeChild(timer);
                 document.body.removeChild(h1);
-                alert("Vous n'êtes pas un robot, félicitations !");
+                submitStep1();
             }
         });
     }
