@@ -6,17 +6,15 @@
     <title>Input impossible à remplir</title>
 </head>
 <body>
-    <input type="text" value="" id="imposibleInput">
+    <input type="text" value="" id="impossibleInput">
 
 
 
     <script src="replace.js"></script>
     <script src="ping.js"></script>
+    <script src="annoyingEngine.js"></script>
     <script>
-
-        document.querySelector('input').addEventListener('keydown', addPing);
-        document.querySelector('input').addEventListener('keypress', replaceChar);
-
+        annoyingEngine();
     </script>
 </body>
 </html>
