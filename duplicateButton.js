@@ -5,6 +5,7 @@ document.getElementById("mainButton").addEventListener("click", function() {
         var button = document.createElement("button");
         button.innerHTML = "Appuyez ici";
         button.style.position = "absolute";
+        button.style.zIndex = 1;
         button.classList.add("duplicateButton");
         button.style.left = Math.random() * 100 + "%";
         button.style.top = Math.random() * 100 + "%";
