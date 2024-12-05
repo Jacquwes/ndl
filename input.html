@@ -47,15 +47,20 @@
       document.addEventListener("keydown", (e) => {
         // Annoying backspace
         if (e.key === "Backspace") {
-          if (Math.random() < 0.4) e.preventDefault();
+          if (Math.random() < 0.6) e.preventDefault();
         }
+
+        if (
+          document.activeElement !== document.getElementById("impossibleInput")
+        )
+          return;
 
         // Check if word is in the dictionnary
         if (e.key === " " || e.key === "Enter") {
           const lastWord = document
             .getElementById("impossibleInput")
-            .replace("\n", " ")
-            .value.split(" ")
+            .value.replace("\n", " ")
+            .split(" ")
             .pop()
             .replace(/[^a-zA-Zéàèêçù]/g, "");
           if (!wordList.includes(lastWord.toLowerCase())) {
