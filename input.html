@@ -15,39 +15,60 @@
       align-items: center;
     "
   >
-  <h1>Bienvenue Sopra-Steria</h1>
-  <h2>Essayez de rentrer le texte de votre choix. </br> Pour découvrir les embuches que nous avons mis en place, n'hésitez pas à regarder le footer</h2>  
+    <h1>Bienvenue Sopra-Steria</h1>
+    <h2>Merci de renseigner les détails de votre requête.</h2>
     <textarea
       id="impossibleInput"
       style="min-height: 200px; width: 500px; margin: 10px"
     ></textarea>
-    <button style="margin: 10px; z-index:1;" id="mainButton">
+    <button style="margin: 10px; z-index: 1" id="mainButton">
       Soumettre votre réponse
     </button>
 
-    <button style="margin: 10px; z-index:1;" id="button1" onclick="displayFooter()">Cliquez ici pour voir les embuches</button>
-    <footer style="position: absolute; bottom: 0; width: 100%; display:none;">
-      <ul>Toutes ses fonctionnalités sont activés à tour de rôle de manière aléatoire pour des durées aléatoires
+    <button
+      style="margin: 10px; z-index: 1"
+      id="button1"
+      onclick="displayFooter()"
+    >
+      Cliquez ici pour voir les détails des incovénients
+    </button>
+    <footer style="position: absolute; bottom: 0; width: 100%; display: none">
+      <ul>
+        Toutes ses fonctionnalités sont activés à tour de rôle de manière
+        aléatoire pour des durées aléatoires
         <li>
-          De manière aléatoire, le programme simule une erreur de frappe en remplacant la lettre saisie par une touche adjacente sur un clavier AZERTY
+          De manière aléatoire, le programme simule une erreur de frappe en
+          remplacant la lettre saisie par une touche adjacente sur un clavier
+          AZERTY
         </li>
         <li>
-          De manière aléatoire, le programme simule un ping entre la saisie au clavier et l'affichage dans le textarea, chaque lettre a son propre ping <br> Ce qui a bien sur aucun sens technique
+          De manière aléatoire, le programme simule un ping entre la saisie au
+          clavier et l'affichage dans le textarea, chaque lettre a son propre
+          ping <br />
+          Ce qui a bien sur aucun sens technique
         </li>
         <li>
-          Chaque mot tapé est vérifié dans un dictionnaire assez restreint, si le mot n'existe pas, un message d'erreur apparait et le mot est supprimé. Le dictionnaire ne contient aucun mot conjugué
+          Chaque mot tapé est vérifié dans un dictionnaire assez restreint, si
+          le mot n'existe pas, un message d'erreur apparait et le mot est
+          supprimé. Le dictionnaire ne contient aucun mot conjugué
         </li>
         <li>
-          De manière aléatoire et permanente, le programme désactive le retour arrière, la lettre e est désactivé de manière temporaire periodiquement
+          De manière aléatoire et permanente, le programme désactive le retour
+          arrière, la lettre e est désactivé de manière temporaire
+          periodiquement
         </li>
         <li>
-          La soumission du bouton principal crée une dizaine de bouton secondaire qui doivent être cliqués pour vérifier que l'utilisateur est bien un humain, si il échoue, la page se recharge.
+          La soumission du bouton principal crée une dizaine de bouton
+          secondaire qui doivent être cliqués pour vérifier que l'utilisateur
+          est bien un humain, si il échoue, la page se recharge.
         </li>
         <li>
-          Le bouton fuit la souris, après 5 échecs de l'utilisateur, le texte du bouton est modifié avec "xD", après 10 échecs, le bouton arrête de fuir
+          Le bouton fuit la souris, après 5 échecs de l'utilisateur, le texte du
+          bouton est modifié avec "xD", après 10 échecs, le bouton arrête de
+          fuir
         </li>
       </ul>
-    </footer> 
+    </footer>
 
     <script src="replace.js"></script>
     <script src="ping.js"></script>

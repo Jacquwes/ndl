@@ -38,52 +38,68 @@ const captchas_audio = [
   {
     name: "yoann",
     url: "yoann.mp3",
-  }
+  },
 ];
 
-function submitStep1()
-{
-  var h1 = document.createElement("h1");
-  h1.innerHTML = "Pour vérifier que vous êtes humain, écoutez l'audio et répondez à la question";
-  h1.style.position = "absolute";
-  h1.style.left = "50%";
-  h1.style.top = "10%";
-  h1.style.transform = "translate(-50%, -50%)";
-  document.body.appendChild(h1);
+let validated = false;
 
-  var audio = document.createElement("audio");
-  audio.src = "audio/" + captchas_audio[Math.floor(Math.random() * captchas_audio.length)].url;
+function submitStep1(text) {
+  const div = document.createElement("div");
+  div.style.position = "absolute";
+  div.style.left = "50%";
+  div.style.top = "50%";
+  div.style.transform = "translate(-50%, -50%)";
+  div.style.backgroundColor = "white";
+  div.style.padding = "20px";
+  div.style.border = "1px solid #333";
+  div.style.zIndex = 2;
+  div.style.boxShadow = "0 0 10px 0 #333";
+  div.style.borderRadius = "10px";
+  document.body.appendChild(div);
+
+  const h1 = document.createElement("h1");
+  h1.innerHTML =
+    text ?? "Veuillez écouter l'audio suivant et écrire le prénom entendu";
+  div.appendChild(h1);
+
+  const audioIndex = Math.floor(Math.random() * captchas_audio.length);
+  const audio = document.createElement("audio");
   audio.controls = true;
-  audio.style.position = "absolute";
-  audio.style.left = "50%";
-  audio.style.top = "50%";
-  audio.style.transform = "translate(-50%, -50%)";
-  document.body.appendChild(audio);
+  audio.src = captchas_audio[audioIndex].url;
+  div.appendChild(audio);
 
-  var input = document.createElement("input");
+  const input = document.createElement("input");
   input.type = "text";
-  input.style.position = "absolute";
-  input.style.left = "50%";
-  input.style.top = "60%";
-  input.style.transform = "translate(-50%, -50%)";
-  document.body.appendChild(input);
+  input.style.display = "block";
+  input.style.width = "100%";
+  input.style.marginTop = "20px";
+  div.appendChild(input);
 
-  var button = document.createElement("button");
+  const button = document.createElement("button");
   button.innerHTML = "Valider";
-  button.style.position = "absolute";
-  button.style.left = "50%";
-  button.style.top = "70%";
-  button.style.transform = "translate(-50%, -50%)";
-  button.addEventListener("click", function() {
-    if (input.value.toLowerCase() === audio.src.split("/")[1].split(".")[0]) {
-      document.body.removeChild(h1);
-      document.body.removeChild(audio);
-      document.body.removeChild(input);
-      document.body.removeChild(button);
-      submitStep2();
+  button.style.display = "block";
+  button.style.marginTop = "20px";
+  div.appendChild(button);
+
+  button.addEventListener("click", () => {
+    if (
+      input.value
+        .toLowerCase()
+        .replace("-", " ")
+        .replace("é", "e")
+        .replace("è", "e")
+        .replace("ë", "e") === captchas_audio[audioIndex].name
+    ) {
+      document.body.removeChild(div);
+      if (!validated) {
+        submitStep1("Captcha validé.\nCependant, veuillez réessayer");
+        validated = true;
+      } else {
+        alert("Captcha validé, votre requête va être envoyée.");
+      }
     } else {
-      alert("Mauvaise réponse");
+      alert("Captcha invalide, vous êtes un robot.\nLa page va être rechargée");
+      location.reload();
     }
   });
-  document.body.appendChild(button);
 }
