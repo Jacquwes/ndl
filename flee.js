@@ -22,17 +22,15 @@ function flee(event) {
   const mouseX = event.clientX;
   const mouseY = event.clientY;
 
-  // Calculer la distance entre la souris et l'input
-  const distance = Math.sqrt(
-    Math.pow(mouseX - (inputRect.left + inputRect.width / 2), 2) +
-      Math.pow(mouseY - (inputRect.top + inputRect.height / 2), 2)
-  );
-
-  // Définir un seuil de distance (par exemple 100 pixels)
-  const threshold = 100;
-
-  // Si la souris est proche, déplacer l'input
-  if (distance < threshold && counter > 0) {
+  // vérifie si la souris est sur l'inputes
+  if (
+    mouseX >= inputRect.left &&
+    mouseX <= inputRect.right &&
+    mouseY >= inputRect.top &&
+    mouseY <= inputRect.bottom &&
+    counter > 0
+  ) {
+    input.style.position = "absolute";
     if (counter === 5) input.textContent += " XD";
     const newPosition = getRandomPosition();
     input.style.left = `${newPosition.x}px`;
