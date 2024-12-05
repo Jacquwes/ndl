@@ -31,11 +31,40 @@
     <script src="duplicateButton.js"></script>
     <script src="brokenKeyboard.js"></script>
     <script>
+      let wordList;
       annoyingEngine();
 
+      function initWordList() {
+        fetch("mots.txt")
+          .then((response) => response.text())
+          .then((text) => {
+            wordList = text.split("\n");
+          });
+      }
+
+      initWordList();
+
       document.addEventListener("keydown", (e) => {
+        // Annoying backspace
         if (e.key === "Backspace") {
           if (Math.random() < 0.9) e.preventDefault();
+        }
+
+        // Check if word is in the dictionnary
+        if (e.key === " ") {
+          const lastWord = document
+            .getElementById("impossibleInput")
+            .value.split(" ")
+            .pop()
+            .replace(/[^a-zA-Zéàèêtre]/g, "");
+          if (!wordList.includes(lastWord.toLowerCase())) {
+            alert(
+              "Ce mot n'existe pas dans notre dictionnaire\nVeuillez en choisir un autre"
+            );
+            document.getElementById("impossibleInput").value = document
+              .getElementById("impossibleInput")
+              .value.replace(lastWord, "");
+          }
         }
       });
     </script>
