@@ -9,13 +9,18 @@ let annoyances = [
     enabled: false,
     execute: (duration) => enableMissclick(duration),
   },
+  {
+    name: "brokenKeyboard",
+    enabled: false,
+    execute: (duration) => enableBrokenKeyboard(duration),
+  },
 ];
 
 function annoyingEngine() {
-  const timeUntilNextAnnoyance = Math.random() * 1000;
+  const timeUntilNextAnnoyance = Math.random() * 5000;
   const randomAnnoyance =
     annoyances[Math.floor(Math.random() * annoyances.length)];
-  const annoyanceDuration = Math.random() * 2000;
+  const annoyanceDuration = Math.random() * 10000;
 
   setTimeout(() => {
     // Skip if the annoyance is already enabled
