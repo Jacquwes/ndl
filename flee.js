@@ -1,9 +1,11 @@
 // L'objectif est de déplacer de manière aléatoire un input quand on détecte que la souris de l'utilisateur est proche de l'input.
 
 
-const input = document.getElementById('imposibleInput');
+const input = document.getElementById('impossibleInput');
 const bodyWidth = window.innerWidth;
 const bodyHeight = window.innerHeight;
+
+document.addEventListener('mousemove', flee);
 
 function getRandomPosition() {
     const maxX = bodyWidth - input.offsetWidth;
