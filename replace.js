@@ -1,11 +1,11 @@
 function enableMissclick(duration) {
   document
     .getElementById("impossibleInput")
-    .addEventListener("keydown", addPing);
+    .addEventListener("keydown", replaceChar);
   setTimeout(() => {
     document
       .getElementById("impossibleInput")
-      .removeEventListener("keydown", addPing);
+      .removeEventListener("keydown", replaceChar);
   }, duration);
 }
 
@@ -13,7 +13,7 @@ let previousValue = "";
 
 function replaceChar() {
   // Remplace le char dans un cas sur 10
-  if (Math.floor(Math.random() * 10) !== 0) {
+  if (Math.floor(Math.random() * 5) !== 0) {
     previousValue = document.getElementById("impossibleInput").value;
     return;
   }
